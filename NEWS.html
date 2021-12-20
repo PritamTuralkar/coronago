@@ -1,0 +1,517 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEWS</title>
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+<style>
+
+
+    * {
+    
+    font-family: 'Mulish', sans-serif;
+}
+    body
+{
+    background-color: white;
+}
+.single-blog
+{
+    box-shadow: 0px 0px 20px  1px rgba(0,0,0,0.2); 
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #fff; 
+}
+
+.single-blog1
+{
+    box-shadow: 0px 0px 20px  1px rgba(0,0,0,0.2); 
+  border: 1px ;
+    margin-top: 10px;
+    background-color: #fff; 
+}
+
+.single-blog img
+{
+    width:100%;
+}
+
+.single-blog1 img
+{
+    width:100%;
+}
+
+.blog-meta 
+{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.single-blog span
+{
+    float:right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.single-blog1 span
+{
+    float:right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+.blog-text
+{
+    font-size: 14px;
+    text-align: justify ;
+}
+
+.single-blog h2
+{
+   margin-top: 10px;
+   font-size: 16px;
+   color: #007bff;
+}
+
+.single-blog h2 a
+{
+   text-decoration: none;
+}
+
+.read-more-btn 
+{
+    background-image: linear-gradient(to right, #1c03b5,#5c8bef);
+    padding: 5px 12px 8px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color:#fff;
+    border:none !important;
+}
+
+.read-more-btn:hover 
+{
+    background-image: linear-gradient(to right, #006417,
+        #00b128);
+    text-decoration: none;
+    color:#fff;
+
+}
+
+
+
+
+/*.....................................navbar.....................................*/
+ .nav_style{
+    background-color: #a29bfe !important ;
+
+ }
+ 
+.nav_style a{
+    color: white !important;
+}
+
+/*............................footer..................................*/
+
+.footer_style{
+    background-color: #a29bfe!important;
+    width: 100% !important;
+}
+.footer_style p{
+    margin-bottom: 0!important;
+    text-align: center;
+}
+
+
+/*......................scrolltop button...................................................*/
+#mybtn:hover{
+     background:#606060  ;
+}
+
+
+
+#mybtn{
+
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border:none;
+    outline: none;
+    background-color: #00A8FF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+  
+<!----------------------nav bar --------------------->
+
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 nav_style fixed-top">
+
+<div class="container">
+    
+    <a href="index.php" class="navbar-brand"><b>COVID-19</b></a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#itemhide">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="itemhide" >
+    <ul class="navbar-nav ml-auto" >
+        <li class="nav-item">
+          <a href="index.php#aboutid" class="nav-link">About</a>
+        </li>   
+        <li class="nav-item">
+          <a href="index.php#symptonsid"  class="nav-link">Symptoms</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.php#preventionid"  class="nav-link">Prevention</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.php#contactid"  class="nav-link">Contact</a>
+        </li>   
+         <li class="nav-item">
+          <a href="index.php#about_us"  class="nav-link">AboutUs</a>
+        </li>   
+        <li class="nav-item">
+          <a href="NEWS.html"  class="nav-link" ><b>NEWS</b></a>
+        </li>
+        <li class="nav-item">
+          <a href="hospitalstatus.php"  class="nav-link"><b>HELP</b></a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="map.html"  class="nav-link" style="background-color: #6762a3;"><b>LIVE.</b></a>
+        </li>   
+
+        
+    </div>
+        
+    </ul>
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+<br>
+<br>
+
+    <div class="row">
+<div class="col-md-7">
+             <div class="single-blog1">
+                
+                <a href="https://www.youtube.com/watch?v=MRkoyixoWPc&ab_channel=BBCNews"><img src="newsimg/nwsmap.PNG"  height="500"  ></a>
+                
+                </div>
+                </div>
+<div class="col-md-5">
+             <div class="single-blog1">
+                
+                <a href="https://www.youtube.com/watch?v=C5YqcZeEAz0"><img src="newsimg/18.webp" width="100" height="250"  ></a>
+
+</div> 
+<div class="single-blog1">
+                 <a href="https://www.youtube.com/watch?v=oW3aIG8LkGE"><img src="newsimg/22.webp" width="100" height="240"  ></a>
+                </div>
+                </div>
+
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=fEhBivmJ864"><img src="newsimg/29.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=fEhBivmJ864">WHO update on latest developments in the Covid-19 pandemic </a></h2>
+                <p class ="blog-text">Top officials from the World Health Organization (WHO), including director-general Tedros Adnahom Ghebreyesus, give a press briefing on Covid-19.
+
+</p>
+               
+
+
+                </div>
+                </div>
+<div class="col-md-4">
+             <div class="single-blog">
+                
+                <a href="https://www.youtube.com/watch?v=5DGwOJXSxqg"><img src="newsimg/mqdefault_6s (1).webp"  ></a>
+                <h2><a href="https://www.youtube.com/watch?v=5DGwOJXSxqg">COVID-19 Animation: What Happens If You Get Coronavirus?</a></h2>
+                <p class ="blog-text">This video 3D animation on COVID-19: What Happens If You Get Coronavirus is a collaboration between Nucleus Medical Media and our friends.</p>
+                </div>
+                </div>
+             
+       
+             
+                <div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="https://www.youtube.com/watch?v=GUWKL3Fu9WA"><img src="newsimg/1.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=GUWKL3Fu9WA">Global coronavirus cases surpassed 400,000</a></h2>
+                <p class ="blog-text">Global coronavirus cases surpassed 400,000, according to data collated by Johns Hopkins University. Almost 17,000 people have now died, while more than 100,000 have recovered.
+</p>
+               
+
+
+                </div>
+                </div>
+
+  <div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="https://www.youtube.com/watch?v=oujlUWnlcEk"><img src="newsimg/2.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=oujlUWnlcEk">Worldwide coronavirus cases keep surging, forcing new restrictions and lockdowns</a></h2>
+                <p class ="blog-text">Worldwide coronavirus infections have passed 30 million according to the latest figures from Johns Hopkins University. 
+
+</p>
+               
+
+
+                </div>
+                </div>
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=1DJGd9_XoiI"><img src="newsimg/3.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=1DJGd9_XoiI">Coronavirus around the world</a></h2>
+                <p class ="blog-text">Britain has surpassed Italy’s coronavirus death toll with over 32,000 deaths, making the UK the country with the highest number of COVID-19 related deaths in Europe.
+
+</p>
+               
+
+
+                </div>
+                </div>
+<div class="col-md-4">
+             <div class="single-blog">
+                
+                <a href="https://www.youtube.com/watch?v=QjEfy54R3mc"><img src="newsimg/30.webp"  ></a>
+                <h2><a href="https://www.youtube.com/watch?v=QjEfy54R3mc">Johnson & Johnson pauses COVID-19 vaccine trial</a></h2>
+                <p class ="blog-text">A late-stage study of Johnson & Johnson's COVID-19 vaccine candidate has been paused while the company investigates about that. </p>
+                </div>
+                </div>
+
+
+               
+
+
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=KtOVzPJfKmI"><img src="newsimg/8.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=KtOVzPJfKmI">Coronavirus India Update: Russia Corona Vaccine के असर पर India का क्या कहना है?</a></h2>
+                <p class ="blog-text">भारत में कोरोना के नए मामले रोज़ नया रिकॉर्ड बना रहे हैं. अब एक दिन में 90 हज़ार से ज्यादा मामले सामने आए हैं और दुनिया में अमरीका के बाद कोरोना  सबसे ज़्यादा
+</p>
+               
+
+
+                </div>
+                </div>
+
+<div class="col-md-4">
+             <div class="single-blog">
+                
+                <a href="https://www.youtube.com/watch?v=Zex4BKIZAsg"><img src="newsimg/24.webp"  ></a>
+                <h2><a href="https://www.youtube.com/watch?v=Zex4BKIZAsg">Travel & migration:  COVID-19 pandemic</a></h2>
+                <p class ="blog-text">00:00 The Spanish government says the country is safe to visit, despite a surge in coronavirus cases. The statement comes after the UK reimposed a quarantine on travellers returning from Spain. </p>
+                </div>
+                </div>
+             
+       
+             
+                <div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="https://www.youtube.com/watch?v=xHCXO49mOUU"><img src="newsimg/25.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=xHCXO49mOUU">If China’s coronavirus vaccines work, which countries will get them and for how much?</a></h2>
+                <p class ="blog-text">Among about 300 coronavirus vaccine candidates being developed around the world, at least nine were undergoing phase 3 human trials .
+               
+
+
+                </div>
+                </div>
+
+  <div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="https://www.youtube.com/watch?v=oSHXOlnmNXI"><img src="newsimg/26.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=oSHXOlnmNXI">What  If  You  Hospitalized With COVID-19?</a></h2>
+                <p class ="blog-text">This scenario shows what might happen in the hospital in the unlikely event that you develop severe COVID-19 symptoms. What treatments can improve your condition?
+</p>
+               
+
+
+                </div>
+                </div>
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=mbLMnxhDgGk"><img src="newsimg/27.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=mbLMnxhDgGk">What if a COVID-19 Vaccine Is Never Developed?</a></h2>
+                <p class ="blog-text">The Coronavirus Pandemic is still in full force and scientists and researchers are doing whatever they can to develop a vaccine.
+</p>
+               
+
+
+                </div>
+                </div>
+
+
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=fPbYaTKKtmA"><img src="newsimg/28.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=fPbYaTKKtmA">Corona Virus Disease / COVID-19: Sahi aur Galath coronavirus disease ke baare me</a></h2>
+                <p class ="blog-text">How COVID-19  Spreads
+----------------------------------------
+Person-to-person spread
+The virus is thought to spread mainly from person-to-person.
+
+</p>
+               
+
+
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+
+             
+       
+             
+                <div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="https://www.youtube.com/watch?v=BKxnX3-yvng"><img src="newsimg/31.webp"  ></a>
+                <h2><a href="https://www.youtube.com/watch?v=BKxnX3-yvng">Coronavirus - The Latest: Is England heading for a two-week lockdown?</a></h2>
+                <p class ="blog-text">Coronavirus podcast will analysis  the impact on health, business and travel in the UK and beyond
+</p>
+               
+
+
+                </div>
+                </div>
+
+  
+
+
+
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=AM0nGSvO6ts"><img src="newsimg/4.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=AM0nGSvO6ts">India COVID epicenter 90,000 daily cases </a></h2>
+                <p class ="blog-text">India is on way to becoming world's largest Covid-19 hotspot. With 4.3 million cases, India surpassed Brazil  with  2nd-highest number of infections.
+</p>
+               
+
+
+                </div>
+                </div>
+<div class="col-md-4">
+             <div class="single-blog">
+               
+                <a href="
+https://www.youtube.com/watch?v=aK8roDIeXL8"><img src="newsimg/36.webp" ></a>
+                <h2><a href="https://www.youtube.com/watch?v=aK8roDIeXL8">Dr. Izzy Gerstenbluth: Latest updates COVID-19 | 20-10-2020</a></h2>
+                <p class ="blog-text">Dr. Izzy Gerstenbluth shares the current situation in Curaçao regarding corona virus.
+
+</p>
+               
+
+
+                </div>
+
+
+                </div>
+
+       </div>   
+        </div>     
+          
+<!-- ......................footer......................... -->
+
+<footer class="mt-5">
+    <div class="footer_style text-white text-center container-fluid">
+        <p>@copyright by pritam groups 2020-2021</p>
+    </div>
+</footer>
+
+  <!-- .............top cursor.............. -->
+
+<div class="container scrolltop float-right pr-5">
+    <i class="fa fa-arrow-up" onclick="topFunction()" id="mybtn"></i>
+</div>
+
+
+
+
+<script type="text/javascript">
+mybutton=document.getElementById("mybtn");  
+
+window.onscroll=function(){scrollFunction()};
+function scrollFunction()
+{
+    if(document.body.scrollTop >100 || document.documentElement.scrollTop>100){
+        mybutton.style.display="block";
+    }else 
+    {
+        mybutton.style.display="none";
+    }
+}
+function topFunction(){
+
+    document.body.scrollTop =0 ;
+    document.documentElement.scrollTop =0;
+}
+</script>        
+</body>
+</html>
