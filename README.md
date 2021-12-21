@@ -10,4 +10,4 @@ this disease.
 If someone has found symptoms of Covid-19 mention in website,then they can register through our
 website to get the Treatment.
 
-NOTE : READ FULL DOCUMENTATION FOR BETTER UNDERSTANDING
+NOTE : Downlod full setup "coronago.zip" file , READ FULL DOCUMENTATION FOR BETTER UNDERSTANDING 
